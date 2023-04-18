@@ -1,1 +1,0 @@
-org.springframework.test.context.ContextCustomizerFactory = edu.g21.dai.config.TestContainersSpringContextCustomizerFactory
