@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>HomePage</title>
+   <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <div>
+    <h1>Seja bem-vindo(a) à página inicial!</h1>
+  </div>
+<nav>
+  <ul>
+    <li><a th:href="@{/perfil(idUser=${user.idUser})}">Ver perfil</a></li>
+    <li><a th:href="@{/criarUser(idUser=${user.idUser})}">Registar User</a></li>
+    <li><a th:href="@{/treinos(idUser=${user.idUser})}">Treinos</a></li>
+    <li><a th:href="@{/jogos(idUser=${user.idUser})}">Jogos</a></li>
+  </ul>
+</nav>
+</body>
+</html>
