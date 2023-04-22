@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Atletas</title>
+  <link rel="stylesheet" href="css/atletas.css">
+</head>
+<body>
+  <h1>Lista de Atletas</h1>
+  <table>
+    <tr>
+      <th>IDUser</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Idade</th>
+      <th>Telefone</th>
+      <th>Posição</th>
+    </tr>
+    <tr th:each="atleta : ${atletas}">
+      <td th:text="${atleta.idUser}"></td>
+      <td th:text="${atleta.username}"></td>
+      <td th:text="${atleta.email}"></td>
+      <td th:text="${atleta.idade}"></td>
+      <td th:text="${atleta.telefone}"></td>
+      <td th:text="${atleta.posicao}"></td>
+    </tr>
+  </table>
+  <button onclick="window.location.href='/atletas/criaratleta'">Criar Novo Atleta</button>
+</body>
+</html>
+
+

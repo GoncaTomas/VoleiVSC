@@ -1,0 +1,51 @@
+/* Define uma fonte padrão para a página */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pavilhao.png");
+}
+
+/* Define um estilo para o cabeçalho */
+		h1/* seja bem vindo*/ {
+      display: inline-block;
+      margin-top: 50px;
+			background-color: #c7c7c7;
+	    padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	}
+/* Define um estilo para a navegação */
+nav {
+  background-color: #333;
+  color: #c0c0c0;
+  border-radius: 5px;
+}
+
+nav ul {
+
+  display: flex;
+}
+
+nav li {
+  margin: 10px;
+
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px;
+
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}

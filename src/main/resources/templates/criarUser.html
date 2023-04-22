@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Utilizador</title>
+  <link rel="stylesheet" href="css/criarUser.css">
+
+</head>
+<body>
+  <div>
+    <h1>Seja bem-vindo(a) à página de registar utilizador!</h1>
+    <form method="POST" action="/criarUser">
+      <input type="hidden" name="idUser" th:value="${user.idUser}">
+      <label for="username">Indique o Nome: </label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Indique a password: </label>
+      <input type="password" id="password" name="password"><br><br>
+      <label for="email">Indique o email: </label>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="idade">Indique a idade: </label>
+      <input type="text" id="idade" name="idade"><br><br>
+      <label for="telefone">Indique o numero de telefone: </label>
+      <input type="text" id="telefone" name="telefone"><br><br>
+
+      <input type="submit" value="Guardar">
+    </form>
+  </div>
+<div>
+  <a th:href="@{/(idUser=${user.idUser})}">HOMEPAGE</a>
+</div>
+
+</body>
+</html>
